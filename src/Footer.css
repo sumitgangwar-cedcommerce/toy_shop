@@ -1,0 +1,17 @@
+.five{
+    text-align: left;
+    padding-left: 4vw;
+    padding-right: 4vw;
+    display: flex;
+    justify-content: space-between;
+    color:white;
+    background-color:grey;
+    margin-top: 2vw;
+    padding: 2vw ;
+  }
+  .five p p{
+    font-weight: 900;
+  }
+  .five div{
+    width: 30%;
+  }

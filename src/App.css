@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Bitter:ital,wght@1,500&family=Oswald&family=Roboto:wght@300&display=swap');
+
+
+
+*{
+  padding:0;
+  margin: 0;
+}
+:root{
+  --brown:#FFA791;
+  --red:#FF648B;
+  --pink:#FF7DD2;
+  --purpel:#B18AFF;
+  --blue:#E4F6FE;;
+  --navFont:'Bitter', serif;
+  --headingFont : 'Oswald', sans-serif;
+  --txtFont : 'Roboto', sans-serif;
+  --green : #00A400;
+}
+
+h1 , h2, h3, h4, h5, h6{
+  font-family: var(--headingFont);
+}
+p{
+  font-family: var(--txtFont);
+  font-size: smaller;
+}
+
+button{
+  cursor: pointer;
+}
+
+@media screen and (max-width: 600px){
+  p{
+    font-size:xx-small;
+  }
+  h4{
+    font-size: small;
+  }
+  h2{
+    font-size: large;
+  }
+}
+.MuiSvgIcon-root{
+  cursor: pointer;
+}
+  
+
+

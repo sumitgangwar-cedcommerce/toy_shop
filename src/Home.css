@@ -1,0 +1,229 @@
+.showCase{
+    margin: 2vw;
+    padding-left: 5vw;
+    padding-right: 5vw;
+    display: flex;
+    justify-content: center;
+    gap: 2vw;
+    text-align: center;
+}
+.cursive{
+    font-size:8vw;
+    font-family:var(--headingFont);
+    font-weight:500;
+    animation: textanimate .5s;
+
+}
+.cursive2{
+    color: rgb(9, 9, 9);
+    font-size:5vw;
+    font-family: var(--navFont);
+    font-weight:500;
+    margin-bottom: 2vw;
+}
+@keyframes textanimate {
+    0%{transform:scale(0%)}
+    10%{transform:scale(10%)}
+    20%{transform:scale(20%)}
+    30%{transform:scale(30%)}
+    40%{transform:scale(40%)}
+    50%{transform:scale(50%)}
+    60%{transform:scale(60%)}
+    70%{transform:scale(70%)}
+    80%{transform:scale(80%)}
+    90%{transform:scale(90%)}
+    100%{transform:scale(100%)}
+}
+.showCase-item{
+    padding: 2vw;
+    border:solid 1px grey;
+    font-family: var(--headingFont);
+}
+.trending-item p{
+    min-height: 3vw;
+}
+.icons-div{
+    bottom:0;
+    transition: all ease-in 0.5s !important;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    visibility: hidden;
+}
+.trending-item-main:hover  .trending-item > .icons-div {
+    transition: all ease-in 1s !important;
+    visibility: visible;
+}
+
+.showCase-item:hover{
+    border-color: var(--blue);
+}
+.trending{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    margin-top: 2vw;
+    margin-bottom: 2vw;
+}
+.trending-item-div{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+
+.trending-item-main{
+    margin-top: 2vw;
+    display: flex;
+    justify-content:flex-start;
+    gap:10px;
+    overflow-x: scroll;
+    width: 80%;
+    scroll-behavior: smooth;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+.trending-item-main::-webkit-scrollbar{
+    display: none;
+}
+
+.trending-item-div .icon{
+    background:url('https://htmldemo.net/kidol/kidol/assets/img/icons/2.png');
+    background-size: cover;
+}
+.trending-item-div button{
+    border:none;
+    background: transparent;
+    padding: 1vw;
+    color:white;
+    
+}
+.trending-item-div .icon:hover{
+    background:url('https://htmldemo.net/kidol/kidol/assets/img/icons/3.png');
+    background-size:cover;
+}
+.trending-item{
+    margin:1.5vw 0;
+    width:30%;
+    padding: 2vw;
+    background-color: #E4F6FE;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 5px;
+    gap: 2vw;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+.trending-item img{
+    margin-left: auto;
+    margin-right: auto;
+    width: 10vw;
+    height: 10vw;
+}
+.testimonial{
+    background-color: rgba(228, 246, 254, 0.679);
+    padding: 1vw 2vw;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 2vw;
+}
+.testimonial-head{
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.testimonail-item{
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+.testimonial-head h2{
+    margin-bottom: 1vw;
+}
+.testimonial-main{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap:2vw;
+}
+.review{
+    background-color: #ffffff;
+    padding: 2vw;
+    border-radius: 5px;
+    margin-bottom: 1vw;
+}
+.view-more{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: transparent;
+    box-shadow: none;
+}
+.view-more button{
+    width:100%;
+    color:black;
+    background-color:#E4F6FE;
+    font-weight: 500;
+    border-radius:5px;
+}
+.view-more button:hover{
+    background-color:#03b2fd;
+    transform: scale(1.3);
+    color: white;
+}
+.view-image-modal{
+    background: none !important;
+    outline: none !important;
+    background-color: aliceblue !important;
+
+}
+.view-img img{
+    width:40vw;
+    height:40vw;
+}
+
+@media screen and (max-width: 768px){
+    .view-img img{
+        width:50vw;
+        height:50vw;
+    }
+}
+@media screen and (max-width: 550px){
+    .view-img img{
+        width:60vw;
+        height:60vw;
+    }
+}
+@media screen and (max-width: 350px){
+    .view-img img{
+        width:70vw;
+        height:70vw;
+    }
+}
+
+.offers img{
+    z-index: -1;
+}
+.offers p{
+    padding: 2vw;
+    background: rgba(255, 255, 255, 0.5);
+    width:50%;
+    float: right;
+    z-index: 1;
+    font-size: 4vw;
+    margin-top: -25%;
+    color:goldenrod;
+    font-weight: 900;
+    border-radius: 10px;
+}
+.offers p button{
+    background-color: #03b2fd;
+    border-radius: 10px;
+    border: none;
+    padding: 1vw 2vw;
+    color:white;
+    font-family: var(--navFont);
+}
+.offers p button:hover{
+    color:black;
+}
