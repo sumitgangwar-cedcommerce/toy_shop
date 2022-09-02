@@ -126,4 +126,21 @@
 .login-name{
     font-family: var(--navFont);
 }
+.to-top{
+    position: fixed;
+    bottom: 0;
+    right: 1%;
+    border-radius:50%;
+    background-color: rgb(233, 233, 233);
+    color:rgb(0, 164, 224);
+    /* display: flex; */
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    display: none;
+  
+  }
+  html{
+    scroll-behavior: smooth;
+  }
 

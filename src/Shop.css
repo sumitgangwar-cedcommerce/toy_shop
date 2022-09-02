@@ -82,7 +82,7 @@
 
 @media screen and (max-width:550px){
     .p-list-item{
-        width:30%;
+        width:40%;
     }
     .cart-button{
         margin-left: 24%;
@@ -97,13 +97,14 @@
 }
 @media screen and (max-width:400px){
     .p-list-item{
-        width:40%;
+        width:80%;
     }
     .cart-button{
-        margin-left: 32%;
+        margin-left: 70%;
         margin-top: 50%;
     }
     .view-icon{
+        margin-left: 70% !important;
         margin-left: 32%;
     }
 }

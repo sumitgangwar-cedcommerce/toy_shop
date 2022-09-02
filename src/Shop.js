@@ -128,7 +128,7 @@ const Shop = () => {
                 </div>
                 
                 <div className="p-content">
-                  <Rating size="small" value={(Math.random()*10)%7} readOnly ></Rating>
+                  <Rating size="small" value={3.5} readOnly ></Rating>
                   <p>{item.name}</p>
                   <p>₹{item.price}</p>
                 </div>

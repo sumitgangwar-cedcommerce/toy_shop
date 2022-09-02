@@ -13,6 +13,7 @@ import { Search } from '@mui/icons-material';
 import MenuIcon from '@mui/icons-material/Menu';
 import { Drawer, Modal, Tooltip } from '@mui/material';
 import Cart from './Cart';
+import KeyboardArrowUpIcon from '@mui/icons-material/KeyboardArrowUp';
 
 
 
@@ -27,6 +28,14 @@ const Layout = () => {
     nav('/shop' , {state:{text:e}})
   }
   const u = useContext(data)
+
+  window.onscroll = () =>{
+    if(window.scrollY > 40){
+      document.getElementById('to-top').style.display = 'flex';
+    }
+    else document.getElementById('to-top').style.display = 'none';
+    
+  }
 
   const login_fun = (event) =>{
     event.preventDefault();
@@ -87,7 +96,9 @@ const Layout = () => {
             </div>
           </div>
         </Modal>
-        
+        <div className='to-top' id='to-top'>
+          <Tooltip title='back to top'><i onClick={()=>{document.body.scrollTop = 0;document.documentElement.scrollTop = 0;}}><KeyboardArrowUpIcon sx={{fontSize:'5vw'}} /></i></Tooltip>
+        </div>
       </div>
       <Outlet />
     </div>
